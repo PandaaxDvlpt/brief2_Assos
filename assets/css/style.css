@@ -21,8 +21,8 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    margin: 0;
-    padding: 0;
+
+    
 } .navbar li .navlinks {
     text-decoration: none;
     color: #ffffff;
@@ -129,9 +129,38 @@
 } .da-title {
     text-transform: uppercase;
     font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
     text-align: center;
-    margin: 20px 0;
+    position: relative;
+    top: 240px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+} .img-ac {
+    background-image: url("https://www.ffforce.fr/medias/images/Accueil/devenir-acteur-force.jpg");
+    min-height: 640px;
+    background-size: cover;
+} .da-text {
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: #ffffff;
+    font-size: 1.5rem;
+    position: relative;
+    text-align: center;
+} .footer-links {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} .footer {
+    background-color: rgba(8, 68, 100, 0.582);
+} .foot-txt {
+    text-align: center;
+    color: #ffffff;
+} .fforce {
+    color:white;
     
-
 }
 
