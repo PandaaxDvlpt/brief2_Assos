@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} :root {
-    --link-color: #f80;
-    --link-underline-padding: .5em;
 }
  body {
     font-family: "Hind Madurai", sans-serif;
@@ -15,7 +12,7 @@
     margin-right: 20px;
     gap: 60px;
 } .navbar {
-
+    animation: fadeIn 1s ;
     background-color: rgba(8, 68, 100, 0.582);;
     padding: 20px;
 } .navbar ul {
@@ -49,35 +46,92 @@
 } .header {
     display: flex;
     align-items: center; 
-    justify-content: row; 
+    justify-content: space-between; 
     padding: 10px 20px;
     gap: 20px;
 } 
 .img-container {
     display: flex;
     height: 440px;
-    
+    z-index: 1;
 } .accueil-blur {
     filter: blur(4px);
+    z-index: 1;
 } .c-rec {
     background-color: rgba(8, 68, 100, 0.582);
-    padding: 20px;
+    padding: 30px;
     display: flex;
 } .log-container {
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 } .log-button {
-    background-color: rgba(8, 68, 100, 0.582);
+    background-color: rgb(255, 255, 255);
     padding: 5px;
+    z-index: 10;
+    border-radius: 10px;
+    border: #ffffff solid 1px;
+    animation: fadeIn 1s ;
 } .cont-button {
-    background-color: rgba(8, 68, 100, 0.582);
+    background-color: rgb(255, 255, 255);
     padding: 5px;
+    z-index: 10;
+    border-radius: 10px;
+    border: #ffffff solid 1px;
+    animation: fadeIn 1s ;
 } .log-button:hover {
-    background-color: #ffffff;
+    background-color: #ffffffb7;
     color: #000000;
 } .cont-button:hover {
-    background-color: #ffffff;
+    background-color: #ffffffb7;
     color: #000000;
+} .log-title {
+    z-index: 10;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(8, 68, 100);
+    font-size: 3rem;
+    border: white solid 2px;
+    background-color: white;
+    border-radius: 10px;
+    animation: fadeIn 1s ;
+} @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} .sponsors {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin: 30px 20px;
+} .img {
+    height: 200px;
+} .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    text-decoration: underline;
+} .da {
+    width: 100%;
+    height: 101%;
+    background-size: cover;
+} .da-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+    
+
 }
+

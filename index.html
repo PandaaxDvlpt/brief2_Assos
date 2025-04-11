@@ -1,44 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
-<>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FFForce - Fédération Officielle Française de PowerLifting</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <div class="header">
-        <img src="/assets/logoffforce.png" alt="Logo de la FFForce" class="logo">
-        <div class="social-media">
-            <input src="/assets/facebook.png" alt="Facebook" class="facebook-button" onclick="window.location.href='https://www.facebook.com/FFForce/'" type="image">
-            <input src="./assets/inst.png" type="image" alt="Instagram" onclick="window.location.href='https://www.instagram.com/ffforce/'" class="instagram-button">
-            <input src="./assets/ytb.png" type="image" alt="YouTube" onclick="window.location.href='https://www.youtube.com/@FFForce'" class="youtube-button">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FFForce - Fédération Officielle Française de PowerLifting</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="/assets/logoffforce.png" alt="Logo de la FFForce" class="logo">
+            <div class="social-media">
+                <input src="/assets/facebook.png" alt="Facebook" class="facebook-button" onclick="window.location.href='https://www.facebook.com/FFForce/'" type="image">
+                <input src="./assets/inst.png" type="image" alt="Instagram" onclick="window.location.href='https://www.instagram.com/ffforce/'" class="instagram-button">
+                <input src="./assets/ytb.png" type="image" alt="YouTube" onclick="window.location.href='https://www.youtube.com/@FFForce'" class="youtube-button">
+            </div>
         </div>
-    <div class="log-container">
-        <input type="button" class="log-button" value="Se Connecter">
-        <input type="button" class="cont-button" value="Nous Contacter">
-    </div>
-</div>
-</head>
-<body>
-    <nav class="navbar">
-        <ul>
-            <li>
-                <a class="navlinks" href="fed.html">La Fédération</a>
-                <a class="navlinks" href="news.html">Actualités</a>
-                <a class="navlinks" href="events.html">Événements</a>
-            </li>
-        </ul>
-    </nav>
-<div class="img-container">
-    <img src="/assets/1.png" alt="Image d'accueil" class="accueil-blur">
-    <img src="/assets/2.png" alt="Image d'accueil" class="accueil-blur">
-    <img src="/assets/3.png" alt="Image d'accueil" class="accueil-blur">
-    <img src="/assets/4.jpg" alt="Image d'accueil" class="accueil-blur">
-</div>
-<span class="c-rec"></span>
-</body>
-<script>
-    document.querySelector('.logo').addEventListener('click', function() {
-        window.location.href = 'index.html'; 
-    });
-</script>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a class="navlinks" href="fed.html">La Fédération</a>
+                    <a class="navlinks" href="news.html">Actualités</a>
+                    <a class="navlinks" href="events.html">Événements</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="img-container">
+            <img src="/assets/1.png" alt="Image d'accueil" class="accueil-blur">
+            <img src="/assets/2.png" alt="Image d'accueil" class="accueil-blur">
+            <img src="/assets/3.png" alt="Image d'accueil" class="accueil-blur">
+            <img src="/assets/4.jpg" alt="Image d'accueil" class="accueil-blur">
+            <h1 class="log-title">Bienvenue sur le site de la FFForce</h1>
+            <div class="log-container">
+                <input type="button" class="log-button" value="Se Connecter">
+                <input type="button" class="cont-button" value="Nous Contacter">
+            </div>
+        </div>
+        <span class="c-rec"></span>
+        <h1 class="section-title">Nos Partenaires</h1>
+            <section class="sponsors">
+                <input type="image" src="/assets/SBD-3.png" alt="SBD" class="img">
+                <input type="image"src="/assets/silent wo-2.png" alt="silentworker" class="img">
+                <input type="image" src="/assets/maniak-2.png" alt="maniak" class="img">
+            </section>
+         <span class="c-rec"></span>
+         <div class="img-ac">
+        <img src="https://www.ffforce.fr/medias/images/Accueil/devenir-acteur-force.jpg" alt="Devenir acteur de la force" class="da">
+        <h1 class="da-title">Devenir acteur de la force</h1>
+        <p class="da-text">Rejoignez la FFForce et participez à la promotion du Powerlifting en France. Que vous soyez athlète, entraîneur ou passionné, il y a une place pour vous dans notre communauté.</p>
+        </div>  
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://www.ffforce.fr/mentions-legales/">Mentions Légales</a>
+                    <a href="https://www.ffforce.fr/plan-du-site/">Plan du site</a>
+                    <a href="https://www.ffforce.fr/faq/">FAQ</a>
+                </div>
+                <p>&copy; 2023 FFForce. Tous droits réservés.</p>
+            </div>
+        </footer>
+        <script>
+            document.querySelector('.logo').addEventListener('click', function() {
+                window.location.href = 'index.html'; 
+            });
+        </script>
+    </body>
 </html>
