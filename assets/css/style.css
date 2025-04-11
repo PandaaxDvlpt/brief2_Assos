@@ -63,4 +63,21 @@
     background-color: rgba(8, 68, 100, 0.582);
     padding: 20px;
     display: flex;
+} .log-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+} .log-button {
+    background-color: rgba(8, 68, 100, 0.582);
+    padding: 5px;
+} .cont-button {
+    background-color: rgba(8, 68, 100, 0.582);
+    padding: 5px;
+} .log-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+} .cont-button:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
