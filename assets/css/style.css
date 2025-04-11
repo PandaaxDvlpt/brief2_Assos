@@ -7,7 +7,8 @@
     --link-underline-padding: .5em;
 }
  body {
-    font-family: "Hind Madurai", sans-serif
+    font-family: "Hind Madurai", sans-serif;
+    background-color: #ffffff;
 }
 .navbar li {
     list-style: none;
@@ -52,3 +53,14 @@
     padding: 10px 20px;
     gap: 20px;
 } 
+.img-container {
+    display: flex;
+    height: 440px;
+    
+} .accueil-blur {
+    filter: blur(4px);
+} .c-rec {
+    background-color: rgba(8, 68, 100, 0.582);
+    padding: 20px;
+    display: flex;
+}
