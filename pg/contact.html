@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <img src="/assets/logoffforce.png" alt="Logo de la FFForce" class="logo">
+        <div class="social-media">
+            <input src="/assets/facebook.png" alt="Facebook" class="facebook-button" onclick="window.location.href='https://www.facebook.com/FFForce/'" type="image">
+            <input src="./assets/inst.png" type="image" alt="Instagram" onclick="window.location.href='https://www.instagram.com/ffforce/'" class="instagram-button">
+            <input src="./assets/ytb.png" type="image" alt="YouTube" onclick="window.location.href='https://www.youtube.com/@FFForce'" class="youtube-button">
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a class="navlinks" href="fed.html">La Fédération</a>
+                <a class="navlinks" href="news.html">Actualités</a>
+                <a class="navlinks" href="events.html">Événements</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="img-container">
+        <img src="/assets/1.png" alt="Image d'accueil" class="accueil-blur">
+        <img src="/assets/2.png" alt="Image d'accueil" class="accueil-blur">
+        <img src="/assets/3.png" alt="Image d'accueil" class="accueil-blur">
+        <img src="/assets/4.jpg" alt="Image d'accueil" class="accueil-blur">
+        <h1 class="log-title">Fiche de Contact</h1>
+        <div class="log-container">
+            <input type="button" class="log-button" value="Se Connecter">
+            <input type="button" class="cont-button" value="Nous Contacter">
+        </div>
+    </div>
+    <span class="c-rec"></span>
+<section class="test">
+    <div class="container">
+        <form id="contact" action="" method="post">
+            <h3>Contactez-moi</h3>
+            <h4>Contactez-moi pour plus d'informations</h4>
+            <fieldset>
+                <input placeholder="Votre nom" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Votre adresse email" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Votre numéro de téléphone" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Typez votre message ici...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button>
+            </fieldset>
+        </form>
+        </div>
+        </div>
+    </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a class="fforce" href="https://www.ffforce.fr/">Site Officiel</a>
+                </div>
+                <p class="foot-txt">&copy; Ce site est utilisé pour réaliser un exercice dans le cadre d'une formation.</p>
+            </div>
+        </footer>
+    <script>
+        document.querySelector('.logo').addEventListener('click', function() {
+            window.location.href = '../index.html'; 
+        });
+    </script>
+</body>
+</html>
