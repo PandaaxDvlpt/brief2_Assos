@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FFForce - Fédération Officielle Française de PowerLifting</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <ul>
             <li>
-                <a href="index.html">Accueil</a>
-                <a href="fed.html">La Fédération</a>
-                <a href="news.html">Actualités</a>
-                <a href="events.html">Événements</a>
+                <img src="./assets/logoffforce.png" alt="Logo de la FFForce" class="logo" href ="index.html">
+                <a class="navlinks" href="fed.html">La Fédération</a>
+                <a class="navlinks" href="news.html">Actualités</a>
+                <a class="navlinks" href="events.html">Événements</a>
+                
             </li>
         </ul>
     </nav>
 </body>
+<script>
+    const logo = document.getElementsByClassName('.logo')[0];
+
+    logo.addEventListener('click', function() {
+        window.location.href = 'index.html';
+    });
+</script>
 </html>
