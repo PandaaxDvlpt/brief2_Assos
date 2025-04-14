@@ -9,7 +9,7 @@ Projet réalisé dans le cadre du deuxième brief de formation. Ce projet consis
   - `css/` : Feuilles de style CSS.
   - `js/` : Scripts JavaScript.
   - `images/` : Images utilisées sur le site.
-- `pg/` : Répertoire supplémentaire (contenu à préciser).
+- `pg/` : Pages.
 
 ## 🛠️ Technologies utilisées
 
