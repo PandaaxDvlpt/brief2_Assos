@@ -4,6 +4,9 @@
     border-radius: 10px;   
     float: left;
     width: 40%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
 }
 
 .fed-title {
@@ -30,22 +33,25 @@ div:after {
     content: "";
     display: table;
     clear: both;
-} .imgfed2 {
-    margin: 20px;
+}
+.imgfed2 {
+    display: block;
+    margin: 20px auto;
     border: 10px solid #0a0505;
     border-radius: 10px;   
-    min-width: 400px;
-    margin: 0 auto;
-    width: 80rem;
-    padding-bottom: 20px;
-} .imgfed3 {
-    margin: 20px;
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.imgfed3 {
+    display: block;
+    margin: 20px auto;
     border-radius: 10px;   
-    margin: 0 auto;
-    width: 900rem;
-    padding-bottom: 20px;
-} 
-
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+}
 .missions-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -53,7 +59,6 @@ div:after {
     padding: 2rem;
     background-color: rgb(8, 3, 3);
 }
-
 .mission-item {
     display: flex;
     align-items: flex-start;
@@ -63,49 +68,49 @@ div:after {
     background-color: rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease;
 }
-
 .mission-item:hover {
     transform: translateY(-5px);
 }
-
 .mission-icon {
     width: 50px;
     height: 50px;
     object-fit: contain;
 }
-
 .mission-content h3 {
     color: #ffffff;
     font-family: poppins, sans-serif;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
-
 .mission-content p {
     color: #ffffff;
     font-family: poppins, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
 }
-@media (max-width: 768px) {
-    .missions-container {
-        grid-template-columns: 1fr;
-    }
-} .imgfed4 {
-    width: 109%;
-    height: 10%;
+.imgfed4 {
+    width: 100vw;
+    height: 800px;
     object-fit: cover;
+    filter: blur(5px);
+    z-index: 1;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
-
 .imgfed-container {
-    position:relative;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: visible;
+    height: 800px;
 }
-
 .imgfed-title {
     position: absolute;
     left: 50px;
-    top: 10%;
-    transform: translateY(0);
+    top: 5%;
     color: white;
     font-family: poppins, sans-serif;
     font-size: 2.5rem;
@@ -115,33 +120,40 @@ div:after {
     padding: 1rem 2rem;
     border-radius: 10px;
     max-width: 50%;
+    z-index: 2;
 }
-
 .imgfed-txt {
     position: absolute;
     left: 50px;
-    top: 30%;
-    transform: translateY(0);
+    top: 20%;
     color: white;
     font-family: poppins, sans-serif;
     font-size: 1.2rem;
     background-color: rgba(8, 3, 3, 0.8);
     padding: 2rem;
     border-radius: 10px;
-    max-width: 60%;
+    max-width: 45%;
+    max-height: 70%;
+    overflow-y: auto;
+    z-index: 2;
 }
-
+.imgfed-txt::-webkit-scrollbar {
+    width: 8px;
+}
+.imgfed-txt::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+.imgfed-txt::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
 .imgfed-txt h5 {
     color: #ffffff;
     font-size: 1.4rem;
     margin-bottom: 1rem;
     margin-top: 1.5rem;
 }
-
-.imgfed-txt h5:first-child {
-    margin-top: 0;
-}
-
 .imgfed-txt ul {
     list-style: none;
     padding-left: 1.5rem;
@@ -160,22 +172,128 @@ div:after {
     left: -1.5rem;
     color: #ffffff;
 }
-
 .imgfed-txt .documents {
     margin-top: 1.5rem;
 }
-
 .imgfed-txt .documents li:before {
     content: "📄";
 }
-
 .imgfed-txt a {
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 .imgfed-txt a:hover {
     color: #cccccc;
     text-decoration: underline;
+}
+
+/* Styles responsives pour mobile */
+@media screen and (max-width: 768px) {
+    .imgfed {
+        float: none;
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .imgfed2, .imgfed3 {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .imgfed4 {
+        width: 100vw;
+        height: 800px;
+    }
+
+    .missions-container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .mission-item {
+        margin-bottom: 15px;
+    }
+
+    .mission-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .fed-title {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .fed-txt {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .imgfed-container {
+        height: auto;
+        min-height: 800px;
+    }
+
+    .imgfed-title {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+
+    .imgfed-txt {
+        width: 90%;
+        max-width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 25%;
+        max-height: 65%;
+        padding: 1.5rem;
+    }
+
+    .imgfed-txt h5 {
+        font-size: 1.2rem;
+    }
+
+    .imgfed-txt ul {
+        padding-left: 1rem;
+    }
+
+    .imgfed-txt ul li {
+        font-size: 1rem;
+    }
+}
+
+/* Styles pour tablettes */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .imgfed {
+        width: 45%;
+    }
+
+    .imgfed2, .imgfed3 {
+        width: 90%;
+    }
+
+    .imgfed4 {
+        width: 100vw;
+        height: 800px;
+    }
+
+    .missions-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .imgfed-title {
+        width: 70%;
+    }
+
+    .imgfed-txt {
+        width: 70%;
+    }
 }

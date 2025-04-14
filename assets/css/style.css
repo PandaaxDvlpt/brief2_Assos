@@ -51,42 +51,50 @@
     gap: 20px;
 } 
 .img-container {
-    display: flex;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     height: 436px;
-    z-index: 1;
-} .accueil-blur {
+    overflow: hidden;
+}
+.accueil-blur {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     filter: blur(4px);
-    z-index: 1;
-} .c-rec {
+}
+.c-rec {
     background-color: rgba(8, 68, 100, 0.582);
     padding: 30px;
     display: flex;
 } .log-container {
     display: flex;
     align-items: center;
-    gap: 30px;
     z-index: 10;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 } .log-button {
     background-color: rgb(255, 255, 255);
-    padding: 5px;
+    padding: 9px;
     z-index: 10;
     border-radius: 10px;
     border: #ffffff solid 1px;
     animation: fadeIn 1s ;
+    cursor: pointer;
 } .cont-button {
     background-color: rgb(255, 255, 255);
-    padding: 5px;
+    padding: 8px;
     z-index: 10;
     border-radius: 10px;
     border: #ffffff solid 1px;
     animation: fadeIn 1s ;
+    cursor: pointer;
 } .log-button:hover {
     background-color: #ffffffb7;
     color: #000000;
+    
 } .cont-button:hover {
     background-color: #ffffffb7;
     color: #000000;
@@ -221,5 +229,158 @@ a {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* Styles responsives pour mobile */
+@media screen and (max-width: 768px) {
+    /* Header */
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    .social-media input[type="image"] {
+        height: 50px;
+        width: 50px;
+    }
+
+    /* Navigation */
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar li {
+        margin: 0;
+    }
+
+    /* Image container et titres */
+    .img-container {
+        height: 300px;
+        grid-template-columns: 1fr;
+    }
+
+    .accueil-blur {
+        display: none;
+    }
+
+    .accueil-blur:first-child {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .log-title {
+        font-size: 1.5rem;
+        width: 90%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .log-container {
+        flex-direction: column;
+        gap: 15px;
+        top:80%;
+    }
+
+    .log-button, .cont-button {
+        width: 200px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    /* Sections */
+    .section-title {
+        font-size: 1.5rem;
+        margin: 15px 0;
+    }
+
+    .sponsors {
+        flex-direction: column;
+        gap: 30px;
+        margin: 15px 10px;
+    }
+
+    .sponsors input[type="image"] {
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Section Devenir acteur */
+    .img-ac {
+        background-position: center;
+        min-height: 500px;
+    }
+
+    .da-title {
+        font-size: 1.5rem;
+        top: 150px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .da-text {
+        font-size: 1rem;
+        top: 200px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 15px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .foot-txt {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+}
+
+/* Styles pour tablettes */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .log-title {
+        font-size: 2rem;
+    }
+
+    .sponsors {
+        gap: 30px;
+    }
+
+    .da-title {
+        font-size: 1.8rem;
+    }
+
+    .da-text {
+        font-size: 1.2rem;
+    }
+
+    .img-container {
+        grid-template-columns: repeat(2, 1fr);
+        height: 400px;
+    }
+
+    .sponsors input[type="image"] {
+        max-width: 200px;
+        height: auto;
+    }
 }
 

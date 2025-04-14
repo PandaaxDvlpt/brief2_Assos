@@ -81,3 +81,57 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
+/* Styles responsives pour mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #contact {
+        margin: 15px 0;
+        padding: 15px;
+    }
+
+    #contact h3 {
+        font-size: 1.5rem;
+    }
+
+    #contact h4 {
+        font-size: 0.9rem;
+    }
+
+    .test {
+        min-width: 100%;
+        padding: 10px;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    #contact button[type="submit"] {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
+/* Styles pour tablettes */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+
+    .test {
+        min-width: 100%;
+    }
+
+    #contact {
+        padding: 20px;
+    }
+}
