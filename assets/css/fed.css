@@ -105,7 +105,7 @@ div:after {
     width: 100%;
     margin-bottom: 30px;
     overflow: visible;
-    height: 800px;
+    height: 700px;
 }
 .imgfed-title {
     position: absolute;
@@ -125,7 +125,7 @@ div:after {
 .imgfed-txt {
     position: absolute;
     left: 50px;
-    top: 20%;
+    top: 30%;
     color: white;
     font-family: poppins, sans-serif;
     font-size: 1.2rem;
@@ -251,7 +251,7 @@ div:after {
         max-width: 90%;
         left: 50%;
         transform: translateX(-50%);
-        top: 25%;
+        top: 32%;
         max-height: 65%;
         padding: 1.5rem;
     }
