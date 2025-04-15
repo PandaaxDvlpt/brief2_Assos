@@ -13,9 +13,9 @@ Projet réalisé dans le cadre du deuxième brief de formation. Ce projet consis
 
 ## 🛠️ Technologies utilisées
 
-- **HTML** : 52.9%
-- **CSS** : 43.6%
-- **JavaScript** : 3.5%
+- **HTML** 
+- **CSS** 
+- **JavaScript** 
 
 ## 🚀 Lancer le projet localement
 
