@@ -31,4 +31,90 @@
     cursor: pointer;
     margin-top: 20px;
 }
+.ac-blur {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 1024px) {
+    .test {
+        width: 70%;
+    }
+    
+    .container-leg h3 {
+        font-size: 1.8rem;
+    }
+    
+    button {
+        width: 130px;
+        padding: 15px;
+    }
+}
 
+@media (max-width: 768px) {
+    .test {
+        width: 85%;
+        padding: 15px;
+    }
+    
+    .container-leg {
+        padding: 15px;
+    }
+    
+    .container-leg h3 {
+        font-size: 1.6rem;
+    }
+    
+    button {
+        width: 120px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .test {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .container-leg {
+        padding: 10px;
+    }
+    
+    .container-leg h3 {
+        font-size: 1.4rem;
+    }
+    
+    button {
+        width: 100px;
+        padding: 10px;
+    }
+    .ac-blur {
+        height: 100vh;
+        object-fit: cover;
+        
+    }
+}
+
+@media (max-width: 320px) {
+    .test {
+        width: 98%;
+        padding: 8px;
+    }
+    
+    .container-leg h3 {
+        font-size: 1.2rem;
+    }
+    
+    button {
+        width: 90px;
+        padding: 8px;
+    }
+    .ac-blur {
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
