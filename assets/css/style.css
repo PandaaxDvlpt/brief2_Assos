@@ -384,5 +384,12 @@ a {
         max-width: 200px;
         height: auto;
     }
-}
-
+} button {
+    border-radius: 6px;
+    cursor: pointer;
+} .dark-mode-toggle {
+    border: 1px solid #fff;
+} .dark-mode-theme {
+    background-color: #000000c4;
+    color: #fff;
+} 
