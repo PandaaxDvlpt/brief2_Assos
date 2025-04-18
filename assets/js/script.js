@@ -4,10 +4,10 @@ document.querySelector('.logo').addEventListener('click', function() {
     window.location.href = '../index.html'; 
 });
 document.querySelector('.youtube-button').addEventListener('click', function() { 
-    window.location.href = 'https://youtube.com/@TheCodingTrain'; 
+    window.location.href = 'https://www.youtube.com/channel/UCup7qWWVSB7Zn9MFtvOmzzQ'; 
 });
 document.querySelector('.instagram-button').addEventListener('click', function() { 
-    window.location.href = 'https://youtube.com/@TheCodingTrain'; 
+    window.location.href = 'https://www.instagram.com/ffforce__/?hl=fr'; 
 });
 document.querySelector('.facebook-button').addEventListener('click', function() { 
     window.location.href = 'https://www.facebook.com/federationfrancaisedeforce/?locale=fr_FR'; 
@@ -23,12 +23,11 @@ document.querySelector('.maniak').addEventListener('click', function() {
 });
 // ----------------------------------------------------------------------------------
 
-// Dark Mod 
+// Dark Mode
 
 // ----------------------------------------------------------------------------------
 const toggleBtn = document.getElementById('toggle-btn');
 const body = document.querySelector('body');
-
 let darkMod = localStorage.getItem('dark-mode');
 
 const setDarkMode = (enable) => {

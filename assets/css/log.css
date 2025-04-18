@@ -57,7 +57,7 @@
     background-color: white;
     box-shadow: 0 0 0 2px rgba(8, 68, 100, 0.5);
 }
-button {
+.submit {
     background-color: #ffffff;
     color: rgba(8, 68, 100, 0.9);
     border: none;
@@ -74,7 +74,7 @@ button {
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-button:hover {
+.submit:hover {
     background-color: rgba(8, 68, 100, 0.9);
     color: white;
     transform: translateY(-3px);
@@ -116,7 +116,7 @@ button:hover {
         font-size: 1.6rem;
     }
     
-    button {
+    .submit {
         width: 120px;
         padding: 12px;
     }
@@ -136,7 +136,7 @@ button:hover {
         font-size: 1.4rem;
     }
     
-    button {
+    .submit {
         width: 100px;
         padding: 10px;
     }
@@ -157,7 +157,7 @@ button:hover {
         font-size: 1.2rem;
     }
     
-    button {
+    .submit {
         width: 90px;
         padding: 8px;
     }
@@ -169,4 +169,64 @@ button:hover {
         left: 0;
         z-index: 1;
     }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+button {
+  background-color: unset;
+  border: unset;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
+
+#root,
+#__next {
+  isolation: isolate;
 }

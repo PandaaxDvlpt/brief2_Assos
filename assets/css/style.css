@@ -384,7 +384,7 @@ a {
         max-width: 200px;
         height: auto;
     }
-} button {
+} .dark-mod {
     border-radius: 6px;
     cursor: pointer;
 } .dark-mode-toggle {
